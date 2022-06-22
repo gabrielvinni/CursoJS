@@ -1,0 +1,53 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(90deg, #62D6F5, #58FAC4);
+}
+
+input{
+    display: none;
+}
+
+#navgation{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex
+}
+
+.bar{
+    margin: 6px;
+    padding: 5px 10px;
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .4s;
+    font-weight: bold;
+}
+
+.bar:hover{
+    background-color: white;
+}
+
+#slide1:checked ~ #navgation #l1{
+    background-color: white;
+}
+
+#slide2:checked ~ #navgation #l2{
+    background-color: white;
+}
+
+#slide3:checked ~ #navgation #l3{
+    background-color: white;
+}
+
+#slide4:checked ~ #navgation #l4{
+    background-color: white;
+}
