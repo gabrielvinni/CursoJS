@@ -3,11 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre JavaScript</title>
+    <title>Java Script</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p>
-        Aqui será adicionado o conteúdo de java script de forma simples e dinâmica para entender.
-    </p>
+    <header>
+        <div id="logo">GV</div>
+        <div id="botao">
+            <div id="barra"></div>
+            <div id="barra"></div>
+            <div id="barra"></div>
+        </div>
+        <nav id="menu">
+            <a href="#">Home</a>
+            <a href="#">Sobre</a>
+            <a href="#">Projetos</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Aprendendo JavaScript</h1>
+        <div id="conteudo">
+            <section id="comandos-basicos">
+                <h2>Comandos Basicos</h2>
+                <p>
+                    Como toda linguagem de programação, o <strong>JavaScript</strong> também possui vários comandos, e para começar, irei apresentar os mais simples. <br> O comando "alert" é utilizado para notificar o usuário sobre algo. Ele desvia o foco da janela atual e obriga o usuário a ler a mensagem, portanto, não abuse muito desse comando, pois isso impede o acesso a outras páginas ou interações do site. Este comando é escrito da seguinte forma: 
+                </p>
+                <code>window.alert(<strong>"Esse é um alerta"</strong>)</code>
+                <button onclick="alerta()">Clique aqui</button>
+                <p>
+                    O próximo comando é o "confirm", e com ele é possível perguntar ao usuário e receber uma resposta, "ok" (sim) ou "cancel" (não). Assim como o "alert", ele também retira o foco da tela principal, esperando a resposta do usuário. Ao contrário do "alert", que não tem um retorno, o "confirm" retorna true ou false, dependendo da escolha do usuário. Este comando é escrito da seguinte forma:
+                </p>
+                <code>window.confirm(<strong>"Esse é o confirm, deseja continuar ?"</strong>)</code>
+                <button onclick="confirmar()">Clique aqui</button>
+                <p>
+                    O comando "prompt", assim como os anteriores, também retira o foco da tela principal, nele o usuário deve inserir algum valor que lhe for sugerido. Este comando é escrito da seguinte forma:
+                </p>
+                <code>window.prompt<strong>("Escreva se nome:")</strong></code>
+                <button onclick="escreva()">Clique aqui</button>
+                <p>
+                    Podemos guardar esses valores do usuário utilizando as variáveis, que é o tema da próxima sessão.
+                </p>
+            </section>
+            <section>
+                <h2>Variáveis</h2>
+            </section>
+        </div>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
