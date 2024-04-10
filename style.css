@@ -68,11 +68,11 @@ section {
     height: 70px;
 }
 
-.ativo {
+.abrir {
     height: auto;
 }
 
-.ativo p {
+.abrir p {
     opacity: 1;
     transition: opacity 1s, transform .5s;
     transform: translateX(0px);
@@ -94,6 +94,7 @@ main h2 {
 main p {
     line-height: 40px;
     text-align: justify;
+    font-size: 1.3rem;
     margin: 15px;
     opacity: 0;
     transform: translateX(-20px);

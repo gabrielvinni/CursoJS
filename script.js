@@ -1,15 +1,15 @@
-let com = document.querySelector("#comandos-basicos")
-com.addEventListener("click", abrirComandos)
-
-function abrirComandos() {
-    com.classList.toggle("ativo")
-}
+let h2 = document.querySelectorAll("h2")
+h2[0].addEventListener("click", abrirComandos)
+h2[1].addEventListener("click", abrirVariaveis)
 // -------------------------------------------------------
-let vari = document.querySelector("#variaveis")
-vari.addEventListener("click", abrirVariaveis)
+function abrirComandos() {
+    let com = document.querySelector("#comandos-basicos")
+    com.classList.toggle("abrir")
+}
 
 function abrirVariaveis() {
-    vari.classList.toggle("ativo")
+    let vari = document.querySelector("#variaveis")
+    vari.classList.toggle("abrir")
 }
 // -------------------------------------------------------
 function alerta() {
