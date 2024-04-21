@@ -26,21 +26,31 @@
             <section id="comandos-basicos">
                 <h2>Comandos Basicos<button class="arrow-section"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/></svg></button></h2>
                 <p>
-                    Como toda linguagem de programação, o <strong>JavaScript</strong> também possui vários comandos, e para começar, irei apresentar os mais simples. <br> O comando "alert" é utilizado para notificar o usuário sobre algo. Ele desvia o foco da janela atual e obriga o usuário a ler a mensagem, portanto, não abuse muito desse comando, pois isso impede o acesso a outras páginas ou interações do site. Este comando é escrito da seguinte forma: 
-                    <code>window.alert(<strong>"Esse é um alerta"</strong>)</code>
-                    <button class="btn-ex" onclick="alerta()">Clique aqui</button>
+                    Como toda linguagem de programação, o <strong>JavaScript</strong> também possui vários comandos, e para começar, irei apresentar os mais simples. <br> O comando "alert" é utilizado para notificar o usuário sobre algo. Ele desvia o foco da janela atual e obriga o usuário a ler a mensagem, portanto, não abuse muito desse comando, pois isso impede o acesso a outras páginas ou interações do site. Este comando é escrito da seguinte forma:
+                    
+                </p>
+                <p id="codigo">
+                    <strong class="ex">Exemplo</strong>
+                    <code>window.alert(<strong class="destaque">"Esse é um alerta"</strong>)</code>
+                    <button class="btn-ex" onclick="alerta()">Veja um exemplo</button>
                 </p>
                 
                 <p>
                     O próximo comando é o "confirm", e com ele é possível perguntar ao usuário e receber uma resposta, "ok" (sim) ou "cancel" (não). Assim como o "alert", ele também retira o foco da tela principal, esperando a resposta do usuário. Ao contrário do "alert", que não tem um retorno, o "confirm" retorna true ou false, dependendo da escolha do usuário. Este comando é escrito da seguinte forma:
-                    <code>window.confirm(<strong>"Esse é o confirm, deseja continuar ?"</strong>)</code>
-                    <button class="btn-ex" onclick="confirmar()">Clique aqui</button>
+                </p>
+                <p id="codigo">
+                    <strong class="ex">Exemplo</strong>
+                    <code>window.confirm(<strong class="destaque">"Esse é o confirm, deseja continuar ?"</strong>)</code>
+                    <button class="btn-ex" onclick="confirmar()">Veja um exemplo</button>
                 </p>
                 
                 <p>
                     O comando "prompt", assim como os anteriores, também retira o foco da tela principal, nele o usuário deve inserir algum valor que lhe for sugerido. Este comando é escrito da seguinte forma:
-                    <code>window.prompt<strong>("Escreva se nome:")</strong></code>
-                    <button class="btn-ex" onclick="escreva()">Clique aqui</button>
+                </p>
+                <p id="codigo">
+                    <strong class="ex">Exemplo</strong>
+                    <code>window.prompt<strong class="destaque">("Escreva se nome:")</strong></code>
+                    <button class="btn-ex" onclick="escreva()">Veja um exemplo</button>
                 </p>
                 
                 <p>
@@ -51,7 +61,13 @@
             <section id="variaveis">
                 <h2 class="btn-section">Variáveis<button class="arrow-section"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/></svg></button></h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dolorem unde velit et quo rem laborum, odit maiores, in debitis amet animi molestias modi illum ad quia rerum quasi deserunt.
+                    As variáveis são como caixas que conseguem armazenar dados. E nós podemos declarar essas variáveis de 4 maneiras:
+                    <ul>
+                        <li>Automaticamente</li>
+                        <li>Usando <strong class="destaque">var</strong></li>
+                        <li>Usando <strong class="destaque">let</strong></li>
+                        <li>Usando <strong class="destaque">const</strong></li>
+                    </ul>
                 </p>
             </section>
         </div>

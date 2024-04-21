@@ -11,7 +11,8 @@
 }
 
 :root {
-    --corFundo: #f0f0f0;
+    --corFundo: #ffffff;
+    --corFundo2: rgb(241, 241, 241);
     --corPrincipal: #EFD81D;
     --corDestaque1: #ff3c38;
 }
@@ -20,7 +21,7 @@ body {
     font-family: "Lato", sans-serif;
     font-size: 17px;
     height: 100vh;
-    background-color: var(--corFundo);
+    background-color: var(--corFundo2);
 }
 
 header {
@@ -48,7 +49,6 @@ header {
 #menu a {
     color: white;
     text-decoration: none;
-    font-size: 20px;
     padding: 5px;
     cursor: pointer;
 }
@@ -56,11 +56,11 @@ header {
 main {
     max-width: 1100px;
     margin: auto;
-    padding: 20px;
+    padding: 7px;
 }
 
 section {
-    background-color: white;
+    background-color: var(--corFundo);
     border-radius: 7px;
     padding: 10px;
     margin-top: 20px;
@@ -72,10 +72,16 @@ section {
     height: auto;
 }
 
-.abrir p {
+.abrir p, .abrir ul{
     opacity: 1;
     transition: opacity 1s, transform .5s;
     transform: translateX(0px);
+}
+
+p#codigo {
+    background-color: var(--corFundo2);
+    padding: 17px;
+    border-radius: 6px;
 }
 
 main h1 {
@@ -91,13 +97,17 @@ main h2 {
     cursor: pointer;
 }
 
+.ex {
+    margin-left: 10px;
+}
+
 main p {
     line-height: 40px;
     text-align: justify;
-    font-size: 1.3rem;
     margin: 15px;
     opacity: 0;
     transform: translateX(-20px);
+    font-size: 1.1rem;
 }
 
 main code {
@@ -109,36 +119,42 @@ main code {
     font-weight: 300;
     position: relative;
     overflow: hidden;
+    max-width: 800px;
+    text-align: left;
 }
 
 main code::before {
     content: "";
     background-color: var(--corPrincipal);
     position: absolute;
-    height: 100px;
+    height: 1000px;
     width: 5px;
     left: 0;
     top: 0;
 }
 
-code strong {
+.destaque {
     color: var(--corDestaque1);
 }
 
-.btn-ex {
-    background-color: #fffce7;
-    border: 2px solid var(--corPrincipal);
-    color: #c2af1e;
-    border-radius: 7px;
-    margin: 20px 0px 0px 0px;
-    padding: 10px;
-    cursor: pointer;
-    transition: all .2s;
+ul {
+    margin-left: 50px;
+    line-height: 25px;
+    opacity: 0;
+    transform: translateX(-20px);
 }
 
-.btn-ex:hover {
-    background-color: #EFD81D;
+.btn-ex {
+    background-color: var(--corPrincipal);
+    border: none;
     color: white;
+    border-radius: 7px;
+    margin: 20px 0px 0px 0px;
+    padding: 15px;
+    cursor: pointer;
+    transition: all .2s;
+    font-weight: bold;
+    font-size: .9rem;
 }
 
 .arrow-section {
