@@ -21,84 +21,85 @@
             <a href="#">Projetos</a>
         </nav>
     </header>
+    <section class="banner">
+        <h1>Conhecendo JavaScript</h1>
+    </section>
     <main>
-        <h1>Aprendendo JavaScript</h1>
-        <div id="conteudo">
-            <section id="comandos-basicos">
-                <h2>Comandos Basicos<button class="arrow-section"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/></svg></button></h2>
-                <p>
-                    Como toda linguagem de programação, o <strong>JavaScript</strong> também possui vários comandos, e para começar, irei apresentar os mais simples. <br> O comando "alert" é utilizado para notificar o usuário sobre algo. Ele desvia o foco da janela atual e obriga o usuário a ler a mensagem, portanto, não abuse muito desse comando, pois isso impede o acesso a outras páginas ou interações do site. Este comando é escrito da seguinte forma:
-                    
-                </p>
-                <p class="codigo">
-                    <strong class="ex">Exemplo</strong>
-                    <code>window.alert(<strong class="destaque">"Esse é um alerta"</strong>)</code>
-                    <button class="btn-ex" onclick="alerta()">Veja um exemplo</button>
-                </p>
+        <div class="spacer onda1"></div>
+        <section class="conteudo" id="comandos-basicos">
+            <h2>Comandos Basicos</h2>
+            <p>
+                Como toda linguagem de programação, o <strong>JavaScript</strong> também possui vários comandos, e para começar, irei apresentar os mais simples. <br> O comando "alert" é utilizado para notificar o usuário sobre algo. Ele desvia o foco da janela atual e obriga o usuário a ler a mensagem, portanto, não abuse muito desse comando, pois isso impede o acesso a outras páginas ou interações do site. Este comando é escrito da seguinte forma:
                 
-                <p>
-                    O próximo comando é o "confirm", e com ele é possível perguntar ao usuário e receber uma resposta, "ok" (sim) ou "cancel" (não). Assim como o "alert", ele também retira o foco da tela principal, esperando a resposta do usuário. Ao contrário do "alert", que não tem um retorno, o "confirm" retorna true ou false, dependendo da escolha do usuário. Este comando é escrito da seguinte forma:
-                </p>
-                <p class="codigo">
-                    <strong class="ex">Exemplo</strong>
-                    <code>window.confirm(<strong class="destaque">"Esse é o confirm, deseja continuar ?"</strong>)</code>
-                    <button class="btn-ex" onclick="confirmar()">Veja um exemplo</button>
-                </p>
-                
-                <p>
-                    O comando "prompt", assim como os anteriores, também retira o foco da tela principal, nele o usuário deve inserir algum valor que lhe for sugerido. Este comando é escrito da seguinte forma:
-                </p>
-                <p class="codigo">
-                    <strong class="ex">Exemplo</strong>
-                    <code>window.prompt<strong class="destaque">("Escreva se nome:")</strong></code>
-                    <button class="btn-ex" onclick="escreva()">Veja um exemplo</button>
-                </p>
-                
-                <p>
-                    Podemos guardar esses valores do usuário utilizando as variáveis, que é o tema da próxima sessão.
-                </p>
-            </section>
+            </p>
+            <p class="codigo">
+                <strong class="ex">Exemplo</strong>
+                <code>window.alert(<strong class="destaque">"Esse é um alerta"</strong>)</code>
+                <button class="btn-ex" onclick="alerta()">clique para ver</button>
+            </p>
+            
+            <p>
+                O próximo comando é o "confirm", e com ele é possível perguntar ao usuário e receber uma resposta, "ok" (sim) ou "cancel" (não). Assim como o "alert", ele também retira o foco da tela principal, esperando a resposta do usuário. Ao contrário do "alert", que não tem um retorno, o "confirm" retorna true ou false, dependendo da escolha do usuário. Este comando é escrito da seguinte forma:
+            </p>
+            <p class="codigo">
+                <strong class="ex">Exemplo</strong>
+                <code>window.confirm(<strong class="destaque">"Esse é o confirm, deseja continuar ?"</strong>)</code>
+                <button class="btn-ex" onclick="confirmar()">clique para ver</button>
+            </p>
+            
+            <p>
+                O comando "prompt", assim como os anteriores, também retira o foco da tela principal, nele o usuário deve inserir algum valor que lhe for sugerido. Este comando é escrito da seguinte forma:
+            </p>
+            <p class="codigo">
+                <strong class="ex">Exemplo</strong>
+                <code>window.prompt<strong class="destaque">("Escreva se nome:")</strong></code>
+                <button class="btn-ex" onclick="escreva()">clique para ver</button>
+            </p>
+            
+            <p>
+                Podemos guardar esses valores do usuário utilizando as variáveis, que é o tema da próxima sessão.
+            </p>
+        </section>
 
-            <section id="variaveis">
-                <h2 class="btn-section">Variáveis<button class="arrow-section"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/></svg></button></h2>
-                <p>
-                    As variáveis são como caixas que podem guardar as coisas, e essas coisas seriam os dados. Nós podemos declarar essas variáveis de 4 maneiras: <br>
-                </p>
-                <p class="codigo">
-                    <strong class="ex">Declarando automaticamente</strong>
-                    <code>
-                        A = <strong class="destaque">20</strong> <br>
-                        B = <strong class="destaque">"JavaScript"</strong> <br>
-                        C = <strong class="destaque">'p'</strong>
-                    </code>
-                    Esse método não é recomendado pois não declara que é uma variável.
-                </p>
-                <p class="codigo">
-                    <strong class="ex">Usando o let</strong>
-                    <code>
-                        <strong>let</strong> A = <strong class="destaque">20</strong> <br>
-                        <strong>let</strong> B = <strong class="destaque">"JavaScript"</strong> <br>
-                        <strong>let</strong> C = <strong class="destaque">'p'</strong>
-                    </code>
-                </p>
-                <p class="codigo">
-                    <strong class="ex">Usando o var</strong>
-                    <code>
-                        <strong>var</strong> A = <strong class="destaque">20</strong> <br>
-                        <strong>var</strong> B = <strong class="destaque">"JavaScript"</strong> <br>
-                        <strong>var</strong> C = <strong class="destaque">'p'</strong>
-                    </code>
-                </p>
-                <p class="codigo">
-                    <strong class="ex">Usando o const</strong>
-                    <code>
-                        <strong>const</strong> A = <strong class="destaque">20</strong> <br>
-                        <strong>const</strong> B = <strong class="destaque">"JavaScript"</strong> <br>
-                        <strong>const</strong> C = <strong class="destaque">'p'</strong>
-                    </code>
-                </p>
-            </section>
-        </div>
+        <section class="conteudo" id="variaveis">
+            <h2>Variáveis</h2>
+            <p>
+                As variáveis são como caixas que podem guardar as coisas, e essas coisas seriam os dados. Nós podemos declarar essas variáveis de 4 maneiras: <br>
+            </p>
+            <p class="codigo">
+                <strong class="ex">Declarando automaticamente</strong>
+                <code>
+                    A = <strong class="destaque">20</strong> <br>
+                    B = <strong class="destaque">"JavaScript"</strong> <br>
+                    C = <strong class="destaque">'p'</strong>
+                </code>
+                Esse método não é recomendado pois não declara que é uma variável.
+            </p>
+            <p class="codigo">
+                <strong class="ex">Usando o let</strong>
+                <code>
+                    <strong>let</strong> A = <strong class="destaque">20</strong> <br>
+                    <strong>let</strong> B = <strong class="destaque">"JavaScript"</strong> <br>
+                    <strong>let</strong> C = <strong class="destaque">'p'</strong>
+                </code>
+            </p>
+            <p class="codigo">
+                <strong class="ex">Usando o var</strong>
+                <code>
+                    <strong>var</strong> A = <strong class="destaque">20</strong> <br>
+                    <strong>var</strong> B = <strong class="destaque">"JavaScript"</strong> <br>
+                    <strong>var</strong> C = <strong class="destaque">'p'</strong>
+                </code>
+            </p>
+            <p class="codigo">
+                <strong class="ex">Usando o const</strong>
+                <code>
+                    <strong>const</strong> A = <strong class="destaque">20</strong> <br>
+                    <strong>const</strong> B = <strong class="destaque">"JavaScript"</strong> <br>
+                    <strong>const</strong> C = <strong class="destaque">'p'</strong>
+                </code>
+            </p>
+        </section>
     </main>
     <script src="script.js"></script>
 </body>
