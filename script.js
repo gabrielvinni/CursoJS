@@ -1,4 +1,4 @@
-// -------- Explos dos comandos --------------
+// -------- Exemplos dos comandos --------------
 
 function alerta() {
     window.alert("Esse é um alerta")

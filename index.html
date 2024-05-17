@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
 </head>
+
 <body>
     <header>
         <div id="logo">GV</div>
@@ -22,49 +24,60 @@
         </nav>
     </header>
     <section class="banner">
+        <div class="bolha1"></div>
         <h1>Conhecendo JavaScript</h1>
+        <div class="bolha2"></div>
     </section>
     <main>
         <div class="spacer onda1"></div>
-        <section class="conteudo" id="comandos-basicos">
+        <section id="comandosBasicos">
             <h2>Comandos Basicos</h2>
+        </section>
+        <section>
+            
             <p>
-                Como toda linguagem de programação, o <strong>JavaScript</strong> também possui vários comandos, e para começar, irei apresentar os mais simples. <br> O comando "alert" é utilizado para notificar o usuário sobre algo. Ele desvia o foco da janela atual e obriga o usuário a ler a mensagem, portanto, não abuse muito desse comando, pois isso impede o acesso a outras páginas ou interações do site. Este comando é escrito da seguinte forma:
-                
+                Como toda linguagem de programação, o <strong>JavaScript</strong> também possui vários comandos, e para
+                começar, irei apresentar os mais simples. <br> O comando "alert" é utilizado para notificar o usuário
+                sobre algo. Ele desvia o foco da janela atual e obriga o usuário a ler a mensagem, portanto, não abuse
+                muito desse comando, pois isso impede o acesso a outras páginas ou interações do site. Este comando é
+                escrito da seguinte forma:
+
             </p>
             <p class="codigo">
                 <strong class="ex">Exemplo</strong>
                 <code>window.alert(<strong class="destaque">"Esse é um alerta"</strong>)</code>
                 <button class="btn-ex" onclick="alerta()">clique para ver</button>
             </p>
-            
             <p>
-                O próximo comando é o "confirm", e com ele é possível perguntar ao usuário e receber uma resposta, "ok" (sim) ou "cancel" (não). Assim como o "alert", ele também retira o foco da tela principal, esperando a resposta do usuário. Ao contrário do "alert", que não tem um retorno, o "confirm" retorna true ou false, dependendo da escolha do usuário. Este comando é escrito da seguinte forma:
+                O próximo comando é o "confirm", e com ele é possível perguntar ao usuário e receber uma resposta, "ok"
+                (sim) ou "cancel" (não). Assim como o "alert", ele também retira o foco da tela principal, esperando a
+                resposta do usuário. Ao contrário do "alert", que não tem um retorno, o "confirm" retorna true ou false,
+                dependendo da escolha do usuário. Este comando é escrito da seguinte forma:
             </p>
             <p class="codigo">
                 <strong class="ex">Exemplo</strong>
                 <code>window.confirm(<strong class="destaque">"Esse é o confirm, deseja continuar ?"</strong>)</code>
                 <button class="btn-ex" onclick="confirmar()">clique para ver</button>
             </p>
-            
             <p>
-                O comando "prompt", assim como os anteriores, também retira o foco da tela principal, nele o usuário deve inserir algum valor que lhe for sugerido. Este comando é escrito da seguinte forma:
+                O comando "prompt", assim como os anteriores, também retira o foco da tela principal, nele o usuário
+                deve inserir algum valor que lhe for sugerido. Este comando é escrito da seguinte forma:
             </p>
             <p class="codigo">
                 <strong class="ex">Exemplo</strong>
                 <code>window.prompt<strong class="destaque">("Escreva se nome:")</strong></code>
                 <button class="btn-ex" onclick="escreva()">clique para ver</button>
             </p>
-            
             <p>
                 Podemos guardar esses valores do usuário utilizando as variáveis, que é o tema da próxima sessão.
             </p>
         </section>
 
-        <section class="conteudo" id="variaveis">
+        <section>
             <h2>Variáveis</h2>
             <p>
-                As variáveis são como caixas que podem guardar as coisas, e essas coisas seriam os dados. Nós podemos declarar essas variáveis de 4 maneiras: <br>
+                As variáveis são como caixas que podem guardar as coisas, e essas coisas seriam os dados. Nós podemos
+                declarar essas variáveis de 4 maneiras: <br>
             </p>
             <p class="codigo">
                 <strong class="ex">Declarando automaticamente</strong>
@@ -103,4 +116,5 @@
     </main>
     <script src="script.js"></script>
 </body>
+
 </html>
