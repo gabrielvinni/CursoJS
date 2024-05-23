@@ -59,28 +59,35 @@ section.banner {
     justify-content: center;
     background-color: var(--corPrincipal);
     position: relative;
+    overflow-x: hidden;
 }
-/*
+
 .bolha1 {
-    height: 600px;
-    width: 600px;
-    opacity: 0.4;
+    border: 1px solid black;
+    height: 400px;
+    width: 400px;
+    opacity: 0.3;
     background-image: url(./SVG/bolha1.svg);
+    background-size: cover;
     position: absolute;
+    margin: 5px;
     left: 0;
-    top: -60px;
+    top: 5%;
 }
 
 .bolha2 {
-    height: 600px;
-    width: 600px;
-    opacity: 0.4;
+    border: 1px solid black;
+    height: 400px;
+    width: 400px;
+    opacity: 0.3;
     background-image: url(./SVG/bolha2.svg);
+    background-size: cover;
     position: absolute;
+    margin: 5px;
     right: 0;
     top: 40%;
 }
-*/
+
 .banner h1, h2{
     font-size: 4em;
 }
