@@ -59,13 +59,13 @@ section.banner {
     justify-content: center;
     background-color: var(--corPrincipal);
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .bolha1 {
     border: 1px solid black;
-    height: 400px;
-    width: 400px;
+    height: 600px;
+    width: 600px;
     opacity: 0.3;
     background-image: url(./SVG/bolha1.svg);
     background-size: cover;
@@ -77,8 +77,8 @@ section.banner {
 
 .bolha2 {
     border: 1px solid black;
-    height: 400px;
-    width: 400px;
+    height: 600px;
+    width: 600px;
     opacity: 0.3;
     background-image: url(./SVG/bolha2.svg);
     background-size: cover;
