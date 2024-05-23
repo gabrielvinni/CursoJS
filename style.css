@@ -63,7 +63,6 @@ section.banner {
 }
 
 .bolha1 {
-    border: 1px solid black;
     height: 600px;
     width: 600px;
     opacity: 0.3;
@@ -72,11 +71,10 @@ section.banner {
     position: absolute;
     margin: 5px;
     left: 0;
-    top: 5%;
+    top: 0;
 }
 
 .bolha2 {
-    border: 1px solid black;
     height: 600px;
     width: 600px;
     opacity: 0.3;
@@ -85,7 +83,7 @@ section.banner {
     position: absolute;
     margin: 5px;
     right: 0;
-    top: 40%;
+    top: 30%;
 }
 
 .banner h1, h2{
