@@ -60,7 +60,7 @@ section.banner {
     background-color: var(--corPrincipal);
     position: relative;
 }
-
+/*
 .bolha1 {
     height: 600px;
     width: 600px;
@@ -80,7 +80,7 @@ section.banner {
     right: 0;
     top: 40%;
 }
-
+*/
 .banner h1, h2{
     font-size: 4em;
 }
