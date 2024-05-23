@@ -84,7 +84,7 @@ section.banner {
 .banner h1, h2{
     font-size: 4em;
 }
-
+/*
 .spacer {
     height: 600px;
     background-repeat: no-repeat;
@@ -98,8 +98,7 @@ section.banner {
 .onda2 {
     background-image: url(./SVG/onda2.svg);
 }
-
-/*
+*/
 #comandosBasicos {
     height: 20vh;
     display: flex;
@@ -171,4 +170,3 @@ button.btn-ex {
     font-weight: bold;
     font-size: .9rem;
 }
-*/
