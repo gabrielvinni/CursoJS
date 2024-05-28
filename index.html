@@ -28,46 +28,39 @@
     </section>
     <main>
         <div class="spacer onda1"></div>
-        <section id="comandosBasicos">
-            <h2>Comandos Basicos</h2>
-        </section>
-        <div class="spacer onda2"></div>
         <section>
             <p>
-                Como toda linguagem de programação, o <strong>JavaScript</strong> também possui vários comandos, e para
-                começar, irei apresentar os mais simples. <br> O comando "alert" é utilizado para notificar o usuário
-                sobre algo. Ele desvia o foco da janela atual e obriga o usuário a ler a mensagem, portanto, não abuse
-                muito desse comando, pois isso impede o acesso a outras páginas ou interações do site. Este comando é
-                escrito da seguinte forma:
-
+                O JavaScript é uma das tecnologias usadas nos sites pela internet, além dele teríamos o HTML e o CSS. O HTML adiciona o conteúdo, o CSS estiliza e o JavaScript cria a interação desse conteúdo com o usuário. Vou dar um pequeno exemplo dessa interação com três comandos simples:
             </p>
             <div class="codigo">
-                <strong class="ex">Exemplo</strong>
-                <code>window.alert(<strong class="destaque">"Esse é um alerta"</strong>)</code>
+                <strong class="ex">Alert</strong>
+                <p>
+                    O comando "alert" é utilizado para notificar o usuário sobre algo. Ele desvia o foco da janela atual e obriga o usuário a ler a mensagem, esse comando é utilizado em casos específicos, pois impede o acesso a outras páginas ou interações do site. Ele é escrito da seguinte forma:
+                </p>
+                <code>window.alert(<strong class="destaque">"Isso é um alerta"</strong>)</code>
                 <button class="btn-ex" onclick="alerta()">clique para ver</button>
             </div>
-            <p>
-                O próximo comando é o "confirm", e com ele é possível perguntar ao usuário e receber uma resposta, "ok"
-                (sim) ou "cancel" (não). Assim como o "alert", ele também retira o foco da tela principal, esperando a
-                resposta do usuário. Ao contrário do "alert", que não tem um retorno, o "confirm" retorna true ou false,
-                dependendo da escolha do usuário. Este comando é escrito da seguinte forma:
-            </p>
+            <hr>
             <div class="codigo">
-                <strong class="ex">Exemplo</strong>
-                <code>window.confirm(<strong class="destaque">"Esse é o confirm, deseja continuar ?"</strong>)</code>
+                <strong class="ex">Confirm</strong>
+                <p>
+                    Com o <strong>confirm</strong> é possível perguntar ao usuário e receber uma resposta, "ok" (sim) ou "cancel" (não). Assim como o "alert", ele também retira o foco da tela principal, esperando a resposta do usuário. Ao contrário do "alert", que não tem um retorno, o "confirm" retorna true ou false, dependendo da escolha do usuário. Esse comando é escrito da seguinte forma:
+                </p>
+                <code>window.confirm(<strong class="destaque">"Isso é um confirm, deseja continuar ?"</strong>)</code>
                 <button class="btn-ex" onclick="confirmar()">clique para ver</button>
             </div>
-            <p>
-                O comando "prompt", assim como os anteriores, também retira o foco da tela principal, nele o usuário
-                deve inserir algum valor que lhe for sugerido. Este comando é escrito da seguinte forma:
-            </p>
+            <hr>
             <div class="codigo">
-                <strong class="ex">Exemplo</strong>
-                <code>window.prompt<strong class="destaque">("Escreva se nome:")</strong></code>
+                <strong class="ex">Prompt</strong>
+                <p>
+                    O comando "prompt", assim como os anteriores, também retira o foco da tela principal, mas nele o usuário deve <strong>inserir</strong> algum valor que lhe for sugerido. Este comando é escrito da seguinte forma:
+                </p>
+                <code>window.prompt<strong class="destaque">("Escreva seu nome:")</strong></code>
                 <button class="btn-ex" onclick="escreva()">clique para ver</button>
             </div>
+            <hr>
             <p>
-                Podemos guardar esses valores do usuário utilizando as variáveis, que é o tema da próxima sessão.
+                Tirando o <strong>alert</strong>, os dados que você inseriu no <strong>confirm</strong> e no <strong>prompt</strong> se perderam pois não tinham um lugar para serem guardados, na próxima seção vamos ver como guardar esses dados.
             </p>
         </section>
 

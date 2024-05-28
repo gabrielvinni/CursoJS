@@ -100,25 +100,18 @@ section.banner {
     background-image: url(./SVG/onda1.svg);
 }
 
-.onda2 {
-    background-image: url(./SVG/onda2.svg);
-}
-
-#comandosBasicos {
-    height: 20vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #161925;
-    color: white;
-}
-
 p {
     line-height: 35px;
     text-align: justify;
     margin: 15px auto;
     max-width: 1100px;
     padding: 7px;
+}
+
+hr {
+    border: 1px solid rgb(241, 241, 241);
+    width: 1000px;
+    margin: 50px auto;
 }
 
 strong.ex {

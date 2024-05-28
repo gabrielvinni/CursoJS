@@ -1,11 +1,11 @@
 // -------- Exemplos dos comandos --------------
 
 function alerta() {
-    window.alert("Esse é um alerta")
+    window.alert("Isso é um alerta")
 }
 function confirmar() {
-    window.confirm("Esse é o confirm, deseja continuar ?")
+    window.confirm("Isso é um confirm, deseja continuar ?")
 }
 function escreva() {
-    window.prompt("Escreva se nome:")
+    window.prompt("Escreva seu nome:")
 }
